@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Enquiries</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Dekimbo</span> Tech Solution</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="current"><a href="enquiry.html">Enquiries</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <table class="signup" cellpadding="2" cellspacing="5">
+        <th colspan="2" align="end">Enquiries</th>
+        <form method="post" name="myform" onSubmit="return validate(this)">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" maxlength="32" name="forename" /></td>
+            </tr>
+
+            <tr>
+                <td>Number</td>
+                <td><input type="text" name="number" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" maxlength="64" name="email" /></td>
+            </tr>
+            <tr>
+                <td>Enquiry</td>
+                <td><textarea name="enquiry" cols="28" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input class="btn" type="submit" value="Signup" />
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
